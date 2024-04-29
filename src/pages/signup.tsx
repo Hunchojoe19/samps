@@ -4,16 +4,16 @@ import SignUpComponentRight from "@/components/signup/SignUpCompRight";
 
 const SignUp = () => {
   const [isMobile, setIsMobile] = React.useState<boolean>(false);
-  let width = window.innerWidth;
-  console.log(width)
+  // let width = window.innerWidth;
+  // console.log(width)
 
-  React.useEffect(() => {
-    window.addEventListener("resize", () => {
-        const ismobile = window.innerWidth < 840;
-        setIsMobile(ismobile);
-      }
-    );
-  }, [isMobile]);
+  // React.useEffect(() => {
+  //   window.addEventListener("resize", () => {
+  //       const ismobile = window.innerWidth < 840;
+  //       setIsMobile(ismobile);
+  //     }
+  //   );
+  // }, [isMobile]);
 
   return (
     <>
