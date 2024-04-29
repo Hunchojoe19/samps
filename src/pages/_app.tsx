@@ -3,7 +3,6 @@ import "@/styles/addCompanyPageStyle/addCompanyModal.css";
 import "@/styles/addCompanyPageStyle/addCompanyDetails.css";
 import { Nunito_Sans } from "next/font/google";
 import type { AppProps } from "next/app";
-import { Provider } from "react-redux";
 
 const nunito_sans = Nunito_Sans({
   weight: "400",
