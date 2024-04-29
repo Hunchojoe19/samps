@@ -3,7 +3,6 @@ import "@/styles/addCompanyPageStyle/addCompanyModal.css";
 import "@/styles/addCompanyPageStyle/addCompanyDetails.css";
 import { Nunito_Sans } from "next/font/google";
 import type { AppProps } from "next/app";
-import { store } from "../redux/store/store";
 import { Provider } from "react-redux";
 
 const nunito_sans = Nunito_Sans({
@@ -13,10 +12,8 @@ const nunito_sans = Nunito_Sans({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Provider store={store}>
-      <main className={nunito_sans.className}>
-        <Component {...pageProps} />
-      </main>
-    </Provider>
+    <main className={nunito_sans.className}>
+      <Component {...pageProps} />
+    </main>
   );
 }
