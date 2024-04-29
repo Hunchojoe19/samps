@@ -12,17 +12,20 @@ const AddCompanyModal = () => {
   return (
     <div>
       {/* You can open the modal using document.getElementById('ID').showModal() method */}
-      <button
+      {/* <button
         className="btn" id="modalButton"
         onClick={() => document.getElementById("my_modal_3").showModal()}
       >
         open modal
-      </button>
+      </button> */}
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box w-96">
           <form method="dialog" className={nunito_sans.className}>
             {/* if there is a button in form, it will close the modal */}
-            <button id="cancelbtn" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-4">
+            <button
+              id="cancelbtn"
+              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-4"
+            >
               ✕
             </button>
           </form>
@@ -42,13 +45,19 @@ const AddCompanyModal = () => {
             </p>
             <div className="modalbtn gap-y-3 text-lg font-semibold">
               <form method="dialog" className={nunito_sans.className}>
-                <button id="laterbtn" className="btn text-primary w-40  min-h-12 rounded-full ">
+                <button
+                  id="laterbtn"
+                  className="btn text-primary w-40  min-h-12 rounded-full "
+                >
                   Maybe later
                 </button>
               </form>
 
               <Link href="/addcompanydashboard">
-                <button id="continuebtn" className="btn btn-primary rounded-full w-40 min-h-12">
+                <button
+                  id="continuebtn"
+                  className="btn btn-primary rounded-full w-40 min-h-12"
+                >
                   Continue
                 </button>
               </Link>
